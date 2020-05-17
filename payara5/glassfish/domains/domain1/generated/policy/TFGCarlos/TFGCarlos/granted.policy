@@ -1,0 +1,49 @@
+/* AUTOMATICALLY GENERATED ON Sun May 17 16:03:31 CEST 2020*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.WebUserDataPermission "/controllerUsuario";
+  permission javax.security.jacc.WebUserDataPermission "/:/controllerAdmin:/controlleradmin:/ControllerAdmin:/usuario/*:/controllerusuario:/controllerUsuario:/admin/*";
+  permission javax.security.jacc.WebUserDataPermission "/controllerAdmin";
+  permission javax.security.jacc.WebUserDataPermission "/admin/*";
+  permission javax.security.jacc.WebUserDataPermission "/controllerusuario";
+  permission javax.security.jacc.WebUserDataPermission "/controlleradmin";
+  permission javax.security.jacc.WebUserDataPermission "/ControllerAdmin";
+  permission javax.security.jacc.WebUserDataPermission "/usuario/*";
+  permission javax.security.jacc.WebResourcePermission "/:/controllerAdmin:/controlleradmin:/ControllerAdmin:/usuario/*:/controllerusuario:/controllerUsuario:/admin/*";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.WebRoleRefPermission "jsp", "**";
+  permission javax.security.jacc.WebRoleRefPermission "", "**";
+  permission javax.security.jacc.WebRoleRefPermission "servlets.Controller", "**";
+  permission javax.security.jacc.WebRoleRefPermission "default", "**";
+  permission javax.security.jacc.WebRoleRefPermission "servlets.ControllerUsuario", "**";
+};
+
+grant      principal org.glassfish.security.common.Group "administrador" {
+  permission javax.security.jacc.WebRoleRefPermission "servlets.Controller", "administrador";
+  permission javax.security.jacc.WebRoleRefPermission "servlets.ControllerUsuario", "administrador";
+  permission javax.security.jacc.WebRoleRefPermission "", "administrador";
+  permission javax.security.jacc.WebRoleRefPermission "jsp", "administrador";
+  permission javax.security.jacc.WebRoleRefPermission "default", "administrador";
+  permission javax.security.jacc.WebResourcePermission "/controllerAdmin";
+  permission javax.security.jacc.WebResourcePermission "/usuario/*";
+  permission javax.security.jacc.WebResourcePermission "/controlleradmin";
+  permission javax.security.jacc.WebResourcePermission "/admin/*";
+  permission javax.security.jacc.WebResourcePermission "/controllerUsuario";
+  permission javax.security.jacc.WebResourcePermission "/controllerusuario";
+  permission javax.security.jacc.WebResourcePermission "/ControllerAdmin";
+};
+
+grant      principal org.glassfish.security.common.Group "usuario" {
+  permission javax.security.jacc.WebRoleRefPermission "", "usuario";
+  permission javax.security.jacc.WebRoleRefPermission "servlets.Controller", "usuario";
+  permission javax.security.jacc.WebRoleRefPermission "default", "usuario";
+  permission javax.security.jacc.WebRoleRefPermission "servlets.ControllerUsuario", "usuario";
+  permission javax.security.jacc.WebRoleRefPermission "jsp", "usuario";
+  permission javax.security.jacc.WebResourcePermission "/usuario/*";
+  permission javax.security.jacc.WebResourcePermission "/controllerUsuario";
+  permission javax.security.jacc.WebResourcePermission "/controllerusuario";
+};
+

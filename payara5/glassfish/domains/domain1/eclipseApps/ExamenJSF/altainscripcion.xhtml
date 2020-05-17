@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<ui:composition template="/WEB-INF/plantillas/plantilla.xhtml">
+	<ui:define name="contenido">
+		<h:link value="Nueva Inscripción" outcome="altainscripcion"></h:link>
+		<h:link value="Listado Inscritos" outcome="listadocarreras"></h:link>
+		<div id="frmaltaoferta" class="formulariogeneral">
+			<h:messages  id="messages" globalOnly="true" layout="table" infoClass="info" errorClass="advertencia"></h:messages>
+			<div>&#160;</div>
+			<h:form id="frmialtaoferta" prependId="false">
+				<fieldset>
+					<legend>Nueva Inscripcion</legend>
+					<h:panelGrid id="pg" columns="2" border="0">
+						<h:outputLabel value="Carrera" />
+						<h:selectOneMenu id="listadoCarrera" value="#{backingNuevaInscripcion.carreraSeleccionada}">
+							<f:selectItems id="listadoCiclo1" value="#{backingNuevaInscripcion.listadoCarreras}"
+								var="carrera" itemValue="#{carrera.idcarrera}" itemLabel="#{carrera.descripcion}" />
+								<f:ajax render="messages" />
+						</h:selectOneMenu>
+						<h:outputLabel value="DNI Corredor" />
+						<h:inputText id="dni" value="#{backingNuevaInscripcion.dniCorredor}" required="true" requiredMessage="Campo Obligatorio"/>
+						<h:message for="dni" errorClass="advertencia"></h:message>
+						<h:commandButton value="Alta" action="#{backingNuevaInscripcion.altaInscripcion()}">
+						</h:commandButton>
+					</h:panelGrid>
+				</fieldset>
+				<div>&#160;</div>
+			</h:form>
+		</div>
+	</ui:define>
+</ui:composition>
+</html>

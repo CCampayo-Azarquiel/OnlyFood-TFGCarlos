@@ -1,0 +1,123 @@
+<ui:composition template="/WEB-INF/plantillas/plantilla.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+	<ui:define name="title">Listado Carreras</ui:define>
+	<ui:define name="contenido">
+		<h:link value="Nueva Inscripción" outcome="altainscripcion"></h:link>
+		<h:link value="Listado Inscritos" outcome="listadocarreras"></h:link>
+		<h:messages id="messages" globalOnly="true" layout="table"
+			errorClass="advertencia" infoClass="info">
+		</h:messages>
+		<h:panelGroup id="panelTab" styleClass="panelTabla"
+			rendered="#{backingListadoCarreras.paginacion.itemsCount>0}"
+			layout="block">
+			<h:form id="frmlistadocarreraspaginado" prependId="false">
+
+				<div class="navegacionTabla">
+					<h:outputText
+						value="Mostrando #{backingListadoCarreras.paginacion.primerElementoPagina}..#{backingListadoCarreras.paginacion.ultimoElementoPagina} de #{backingListadoCarreras.paginacion.itemsCount}" />
+
+					<h:commandLink id="anterior" value="Anterior"
+						rendered="#{backingListadoCarreras.paginacion.hayPaginaAnterior}">
+						<f:ajax execute="@form" render="@form"
+							listener="#{backingListadoCarreras.paginaAnterior}" />
+					</h:commandLink>
+
+					<h:commandLink id="siguiente" value="Siguiente"
+						rendered="#{backingListadoCarreras.paginacion.hayPaginaSiguiente}">
+						<f:ajax execute="@form" render="@form"
+							listener="#{backingListadoCarreras.paginaSiguiente}" />
+					</h:commandLink>
+
+					<h:selectOneMenu id="slctpaginacion"
+						value="#{backingListadoCarreras.slctnrpag}">
+						<f:selectItem itemLabel="5" itemValue="5" />
+						<f:selectItem itemLabel="10" itemValue="10" />
+						<f:selectItem itemLabel="15" itemValue="15" />
+						<f:selectItem itemLabel="20" itemValue="20" />
+						<f:ajax listener="#{backingListadoCarreras.resetPaginacion}"
+							render="@form" />
+					</h:selectOneMenu>
+				</div>
+				<h:dataTable styleClass="tabla" id="tablasocios" var="carrera"
+					rendered="#{not empty backingListadoCarreras.listadoCarreras}"
+					value="#{backingListadoCarreras.listadoCarreras}" border="1"
+					headerClass="list-header" rowClasses="filaimpar,filapar"
+					columnClasses="just-derecha,just-izquierda,justizquierda,just-centro">
+					<f:facet name="header">
+						<h:outputText value="Listado de Carreras"></h:outputText>
+					</f:facet>
+					<h:column id="Carrera">
+						<f:facet name="header">
+							<h:outputText value="Carrera">
+							</h:outputText>
+						</f:facet>
+						<h:outputText value="#{carrera.descripcion}">
+						</h:outputText>
+					</h:column>
+					<h:column id="Inscritos" headerClass="list-header">
+						<f:facet name="header">
+							<h:outputText value="ver"></h:outputText>
+						</f:facet>
+						<h:commandLink value="Ver libros"
+							action="#{backingListadoCarreras.getInscripcionesCarrera(carrera.idcarrera)}">
+							<f:ajax render="CorredoresInscritos messages" />
+						</h:commandLink>
+					</h:column>
+				</h:dataTable>
+				<div>
+					<h:outputText id="pagactual"
+						value="Pagina:#{backingListadoCarreras.paginacion.pagina}" />
+
+					<h:outputText id="regpag"
+						value="Registros por pagina: #{backingListadoCarreras.paginacion.nrpag}" />
+				</div>
+			</h:form>
+		</h:panelGroup>
+		<h:panelGroup id="CorredoresInscritos" styleClass="panelTabla"
+			layout="block">
+			<h:form id="frmlistadoinscripciones" prependId="false">
+				<h:dataTable id="CorredoresInscritos2" layout="block"
+					styleClass="tabla" var="inscripcion"
+					rendered="#{not empty backingListadoCarreras.carreraSeleccionada.inscripciones}"
+					value="#{backingListadoCarreras.carreraSeleccionada.inscripciones}"
+					border="1" headerClass="list-header" rowClasses="filaimpar,filapar"
+					columnClasses="just-derecha,just-izquierda,just-izquierda,just-centro">
+					<f:facet name="header">
+						<h:outputText
+							value="Inscritos en : #{backingListadoCarreras.carreraSeleccionada.descripcion}"></h:outputText>
+					</f:facet>
+					<h:column id="Dorsal">
+						<f:facet name="header">
+							<h:outputText value="Dorsal"></h:outputText>
+						</f:facet>
+						<h:outputText value="#{inscripcion.dorsal}">
+						</h:outputText>
+					</h:column>
+					<h:column id="Corredor">
+						<f:facet name="header">
+							<h:outputText value="Corredor"></h:outputText>
+						</f:facet>
+						<h:outputText value="#{inscripcion.corredor.nombre}"></h:outputText>
+					</h:column>
+					<h:column id="Email">
+						<f:facet name="header">
+							<h:outputText value="Email"></h:outputText>
+						</f:facet>
+						<h:outputText value="#{inscripcion.corredor.email}"></h:outputText>
+					</h:column>
+					<h:column id="Eliminar">
+						<f:facet name="header">
+							<h:outputText value="Eliminar"></h:outputText>
+						</f:facet>
+						<h:commandLink
+							action="#{backingListadoCarreras.removeInscripcion(inscripcion.carrera.idcarrera, inscripcion.corredor.dni)}"
+							value="Eliminar"></h:commandLink>
+					</h:column>
+				</h:dataTable>
+			</h:form>
+		</h:panelGroup>
+	</ui:define>
+</ui:composition>

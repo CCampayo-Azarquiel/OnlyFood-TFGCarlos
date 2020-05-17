@@ -1,0 +1,15 @@
+/* AUTOMATICALLY GENERATED ON Fri Mar 27 16:22:23 CET 2020*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.WebResourcePermission "/";
+  permission javax.security.jacc.WebUserDataPermission "/";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.WebRoleRefPermission "jsp", "**";
+  permission javax.security.jacc.WebRoleRefPermission "", "**";
+  permission javax.security.jacc.WebRoleRefPermission "rest.aplication.config.AplicationConfig", "**";
+  permission javax.security.jacc.WebRoleRefPermission "default", "**";
+};
+

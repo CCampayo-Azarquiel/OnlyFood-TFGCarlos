@@ -1,0 +1,17 @@
+/* AUTOMATICALLY GENERATED ON Sat Mar 21 19:48:57 CET 2020*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.EJBMethodPermission "ServicioCarrera", "getAllCarreras,Local,";
+  permission javax.security.jacc.EJBMethodPermission "ServicioCarrera", "getTotal,Local,";
+  permission javax.security.jacc.EJBMethodPermission "ServicioCarrera", "carrerasEnRango,Local,int,int";
+  permission javax.security.jacc.EJBMethodPermission "ServicioInscripcion", "nuevaInscripcion,Local,java.lang.String,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "ServicioCarrera", "getCarreraById,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "ServicioCarrera", "removeInscripcion,Local,java.lang.Long,java.lang.String";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.EJBRoleRefPermission "ServicioCarrera", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "ServicioInscripcion", "**";
+};
+

@@ -1,0 +1,232 @@
+[#|2019-09-17T20:07:42.975+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[S2004]: Log output channel com.sun.messaging.jmq.util.log.SysLogHandler is disabled: no imqutil in java.library.path|#]
+
+
+[#|2019-09-17T20:07:42.990+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|
+================================================================================
+Message Queue 5.1.1
+Oracle
+Version:  5.1.1  (Build 6-a)
+Compile:  June 28 2018 0917
+
+Copyright (c) 2013-2017 Oracle and/or its affiliates.  All rights reserved.
+================================================================================
+Java Runtime: 1.8.0_221 Oracle Corporation C:\Program Files\Java\jdk1.8.0_221\jre
+|#]
+
+
+[#|2019-09-17T20:07:43.038+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|   IMQ_HOME=C:\payara5\mq
+|#]
+
+
+[#|2019-09-17T20:07:43.038+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|IMQ_VARHOME=C:\payara5\glassfish\domains\domain1\imq
+|#]
+
+
+[#|2019-09-17T20:07:47.548+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|Windows 10 10.0 amd64 LAPTOP-7LLAI93Q (4 cpu) Carlos
+|#]
+
+
+[#|2019-09-17T20:07:47.559+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|Java Heap Size: max=466432k, current=344576k
+|#]
+
+
+[#|2019-09-17T20:07:47.559+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|Arguments: -port 7676 -name imqbroker -nobind -imqhome C:\payara5\mq -varhome C:\payara5\glassfish\domains\domain1\imq -libhome C:\payara5\mq\lib -useRmiRegistry -rmiRegistryPort 8686 -save -silent
+|#]
+
+
+[#|2019-09-17T20:07:47.560+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|JMSRA BrokerProps: imq.cluster.dynamicChangeMasterBrokerEnabled=true, imq.service.activate=jmsdirect, imq.imqcmd.password=*****, imq.jmsra.managed=true, imq.cluster.nowaitForMasterBroker=true
+|#]
+
+
+[#|2019-09-17T20:07:47.560+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|Broker Properties: imq.service.activate=jmsdirect, imq.cluster.nowaitForMasterBroker=true, imq.jmx.rmiregistry.use=true, imq.portmapper.port=7676, imq.jmsra.managed=true, imq.instancename=imqbroker, java.util.logging.ConsoleHandler.level=OFF, imq.imqcmd.password=*****, imq.jmx.rmiregistry.port=8686, imq.service.runtimeAdd=mqdirect2, imq.cluster.dynamicChangeMasterBrokerEnabled=true, imq.jmx.rmiregistry.start=false, imq.portmapper.bind=false
+|#]
+
+
+[#|2019-09-17T20:07:47.560+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|Embedded Broker 
+|#]
+
+
+[#|2019-09-17T20:07:47.582+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B1522]: Create thread pool portmapper for (4, 4)(60s) service
+|#]
+
+
+[#|2019-09-17T20:07:47.795+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|imq.persist.minimizeWrites=true
+|#]
+
+
+[#|2019-09-17T20:07:47.795+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|imq.persist.file.minimizeWrites=false
+|#]
+
+
+[#|2019-09-17T20:07:47.815+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B1060]: Loading persistent data...
+|#]
+
+
+[#|2019-09-17T20:07:47.815+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|Using built-in file-based persistent store: C:\payara5\glassfish\domains\domain1\imq\instances\imqbroker\
+|#]
+
+
+[#|2019-09-17T20:07:48.118+0200|WARNING|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|WARNING Existing file: incompleteTxnStorehas older cookie version than current version. Current version = 1. Original file version = 0
+|#]
+
+
+[#|2019-09-17T20:07:48.287+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B2219]: Broker property setting imq.persist.minimizeWritesLevel2=true will be ignored
+|#]
+
+
+[#|2019-09-17T20:07:48.307+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B1041]: Cluster initialization successful.
+|#]
+
+
+[#|2019-09-17T20:07:48.389+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B1013]: Auto Creation of Queues is enabled
+|#]
+
+
+[#|2019-09-17T20:07:48.436+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|new transaction log enabled
+|#]
+
+
+[#|2019-09-17T20:07:48.436+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|sync writes to disk = false
+|#]
+
+
+[#|2019-09-17T20:07:48.436+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|logNonTransactedMsgSend = false
+|#]
+
+
+[#|2019-09-17T20:07:48.436+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|logNonTransactedMsgAck = false
+|#]
+
+
+[#|2019-09-17T20:07:48.437+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B1392]: Opening transaction log with file mode rw, maximum size 10.485.760 bytes
+|#]
+
+
+[#|2019-09-17T20:07:48.496+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B1136]: Processing stored transactions
+|#]
+
+
+[#|2019-09-17T20:07:48.496+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B1390]: Loading of transactions has been successfully completed
+|#]
+
+
+[#|2019-09-17T20:07:48.497+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B1434]: Retrieving stored destinations
+|#]
+
+
+[#|2019-09-17T20:07:48.497+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B1503]: Retrieved 0 destinations from store
+|#]
+
+
+[#|2019-09-17T20:07:48.499+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B1144]: Creating Dead Message Queue
+|#]
+
+
+[#|2019-09-17T20:07:48.521+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B1158]: Administrator has created destination mq.sys.dmq [Queue]
+|#]
+
+
+[#|2019-09-17T20:07:48.602+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B1239]: Using platform MBean server
+|#]
+
+
+[#|2019-09-17T20:07:48.622+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B1234]: JMX Connector Server jmxrmi started successfully with url service:jmx:rmi://LAPTOP-7LLAI93Q/jndi/rmi://LAPTOP-7LLAI93Q:8686/LAPTOP-7LLAI93Q/7676/jmxrmi
+|#]
+
+
+[#|2019-09-17T20:07:48.727+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B1004]: Starting the admin service using tcp(host = *, port=0, mode=dedicated) with min threads 4 and max threads of 10 
+|#]
+
+
+[#|2019-09-17T20:07:48.727+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B1227]: Using file user repository for admin service connection authentication
+|#]
+
+
+[#|2019-09-17T20:07:48.744+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B1004]: Starting the jms service using tcp(host = *, port=0, mode=dedicated) with min threads 10 and max threads of 1000 
+|#]
+
+
+[#|2019-09-17T20:07:48.744+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B1227]: Using file user repository for jms service connection authentication
+|#]
+
+
+[#|2019-09-17T20:07:48.751+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B1004]: Starting the mqdirect2 service using in-process connections with min threads 0 and max threads of 0 
+|#]
+
+
+[#|2019-09-17T20:07:48.752+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B1227]: Using file user repository for mqdirect2 service connection authentication
+|#]
+
+
+[#|2019-09-17T20:07:48.757+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B1004]: Starting the jmsdirect service using  with min threads 0 and max threads of 0 
+|#]
+
+
+[#|2019-09-17T20:07:48.757+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B1227]: Using file user repository for jmsdirect service connection authentication
+|#]
+
+
+[#|2019-09-17T20:07:48.770+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B1004]: Starting the cluster service using tcp [ 0.0.0.0/0.0.0.0:50495 ] with min threads 1 and max threads of 1 
+|#]
+
+
+[#|2019-09-17T20:07:48.778+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B1228]: Cluster ping interval is 60 seconds
+|#]
+
+
+[#|2019-09-17T20:07:48.788+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=207;_ThreadName=admin-thread-pool::admin-listener(3);|[B1039]: Broker "imqbroker@LAPTOP-7LLAI93Q:7676" ready.
+|#]
+
+
+[#|2019-09-17T20:07:48.983+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=224;_ThreadName=RMI TCP Connection(4)-192.168.36.1;|JMX Connection Open: jmxrmi, connection ID: rmi://192.168.36.1  1, Count=1
+|#]
+
+
+[#|2019-09-17T20:07:49.002+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=224;_ThreadName=RMI TCP Connection(4)-192.168.36.1;|JMX Connection Close: jmxrmi, connection ID: rmi://192.168.36.1  1, Count=0
+|#]
+
+
+[#|2019-09-17T20:10:54.727+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=262;_ThreadName=Thread-48;|[B1047]: Shutting down broker...[BrokerProcess:Thread[Thread-48,5,main]]
+|#]
+
+
+[#|2019-09-17T20:10:54.729+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=262;_ThreadName=Thread-48;|[B1077]: Broadcast good-bye to all connections ...
+|#]
+
+
+[#|2019-09-17T20:10:54.729+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=262;_ThreadName=Thread-48;|[B1078]: Flushing good-bye messages ...
+|#]
+
+
+[#|2019-09-17T20:10:54.729+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=262;_ThreadName=Thread-48;|[B1007]: Stopping Service admin with protocol tcp(host = *, port=0, mode=dedicated)
+|#]
+
+
+[#|2019-09-17T20:10:54.729+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=262;_ThreadName=Thread-48;|[B1007]: Stopping Service jmsdirect with protocol 
+|#]
+
+
+[#|2019-09-17T20:10:54.730+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=262;_ThreadName=Thread-48;|[B1007]: Stopping Service mqdirect2 with protocol none
+|#]
+
+
+[#|2019-09-17T20:10:54.730+0200|INFO|5.1.1|imq.log.Logger|_ThreadID=262;_ThreadName=Thread-48;|[B1007]: Stopping Service jms with protocol tcp(host = *, port=0, mode=dedicated)
+|#]
+
+
+[#|2019-09-17T20:10:55.732+0200|WARNING|5.1.1|imq.log.Logger|_ThreadID=262;_ThreadName=Thread-48;|WARNING Caught exception when stopping JMX Connector Server jmxrmi:
+java.io.IOException: Cannot bind to URL: javax.naming.ServiceUnavailableException [Root exception is java.rmi.ConnectException: Connection refused to host: LAPTOP-7LLAI93Q; nested exception is: 
+	java.net.ConnectException: Connection refused: connect]
+|#]
+
+
+[#|2019-09-17T20:10:55.732+0200|WARNING|5.1.1|imq.log.Logger|_ThreadID=262;_ThreadName=Thread-48;|WARNING [B2138]: Caught exception when stopping JMX Agent:
+java.io.IOException: Cannot bind to URL: javax.naming.ServiceUnavailableException [Root exception is java.rmi.ConnectException: Connection refused to host: LAPTOP-7LLAI93Q; nested exception is: 
+	java.net.ConnectException: Connection refused: connect]
+|#]
+
+
+[#|2019-09-17T20:10:58.888+0200|FORCE|5.1.1|imq.log.Logger|_ThreadID=262;_ThreadName=Thread-48;|[B1048]: Shutdown of broker complete.
+|#]
+
+

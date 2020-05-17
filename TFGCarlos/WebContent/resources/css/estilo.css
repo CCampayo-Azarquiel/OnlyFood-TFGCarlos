@@ -1,0 +1,157 @@
+body {
+/* 	background-color: #e41b23; */
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+/* #container {
+	background-color: #C5B26D;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 16px;
+	text-align: center;
+} */
+
+#header {
+	background-image: url(../img/logo.jpg);
+	height: 175px;
+	width: 800px;
+}
+
+#menu {
+	font-size: 16px;
+	width: 640px;
+	height: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 8px;
+	margin-bottom: 10px;
+}
+
+#diverror {
+	font-size: 16px;
+	color: #610B21;
+	width: 640px;
+	height: 60px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #ffe6e6;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+	text-align:center;
+}
+
+#diverror p {
+	padding-left: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#divconfirmacion {
+	font-size: 16px;
+	color: #009930;
+	width: 640px;
+	height: 60px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #e6ffee;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+
+#divconfirmacion p {
+	padding-left: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#paginacion {
+	margin-left: 125px;
+}
+
+#registro {
+	float: right;
+}
+
+.formulariogeneral {
+	font-size: 16px;
+	width: 515px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+/*
+.formulariogeneral fieldset legend{
+	background: url(../img/azarquiel.gif) no-repeat left;
+    padding: 0px 5px 0px 20px;
+}
+
+.formulariogeneral fieldset  input{
+	padding: 5px;
+	border-radius: 7px;
+	border: none;
+}*/
+.advertencia {
+	font-size: 20px;
+	color: red;
+}
+
+.cabecera {
+	background-color: #e41b23;
+	/* 	position: fixed; 
+	margin-bottom: 100px;*/
+}
+
+.contenido {
+	overflow: auto;
+	text-align: center;
+}
+
+.img-inicio {
+	max-height: 200px;
+}
+
+a {
+	color: grey;
+}
+
+footer {
+	text-align: center;
+	background-color:rgb(149, 149, 149);
+}
+
+footer a {
+	color: rgb(255, 255, 255);
+}
+
+footer a:hover {
+	text-decoration: none;
+}
+.centrarTexto{
+	text-align:center;
+}
+.contenido{
+	min-height:300px;
+}
+.fotoLogin{
+	color:white;
+	height:auto;
+	max-width: 80%;
+}
+.dropdown-menu{
+	background-color: #c0c0c0;
+	color:white;
+}
+.btn-danger{
+	background-color: #e41b23;
+}
